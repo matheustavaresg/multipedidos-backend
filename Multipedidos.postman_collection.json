@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "f7747a19-c3b0-448c-b4f4-07023b2a7f9d",
+		"name": "Multipedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7827277"
+	},
+	"item": [
+		{
+			"name": "Items - List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://n0pi1338ec.execute-api.us-east-1.amazonaws.com/items",
+					"protocol": "https",
+					"host": [
+						"n0pi1338ec",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items - Show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://n0pi1338ec.execute-api.us-east-1.amazonaws.com/items/24fd3c97-4749-4fe6-9091-50eca34baadd",
+					"protocol": "https",
+					"host": [
+						"n0pi1338ec",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items",
+						"24fd3c97-4749-4fe6-9091-50eca34baadd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items - Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tenis Fila\",\r\n  \"price\": 299\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://n0pi1338ec.execute-api.us-east-1.amazonaws.com/items/24fd3c97-4749-4fe6-9091-50eca34baadd",
+					"protocol": "https",
+					"host": [
+						"n0pi1338ec",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items",
+						"24fd3c97-4749-4fe6-9091-50eca34baadd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": 249, \r\n    \"name\": \"tenis infantil 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://n0pi1338ec.execute-api.us-east-1.amazonaws.com/items",
+					"protocol": "https",
+					"host": [
+						"n0pi1338ec",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"124\",\r\n    \"price\": 249, \r\n    \"name\": \"tenis infantil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://n0pi1338ec.execute-api.us-east-1.amazonaws.com/items/24fd3c97-4749-4fe6-9091-50eca34baadd",
+					"protocol": "https",
+					"host": [
+						"n0pi1338ec",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items",
+						"24fd3c97-4749-4fe6-9091-50eca34baadd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
